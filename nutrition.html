@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub - Nutrition Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workout Plans</a></li>
+                <li><a href="nutrition.html">Nutrition Plans</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="nutrition">
+        <h1>Nutrition Plans</h1>
+        <div>
+            <label for="diet-preference">Select your dietary preference:</label>
+            <select id="diet-preference">
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+                <option value="balanced">Balanced</option>
+            </select>
+        </div>
+        <button onclick="generateMealPlan()">Get Meal Plan</button>
+
+        <div id="meal-plan"></div>
+        
+        
+        <div id="meal-image">
+            <img id="meal-img" src="" alt="" style="display:none; width: 300px; margin-top: 20px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FitHub. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
